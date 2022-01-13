@@ -7,7 +7,11 @@
 @use '../partials/base/base';
 
 // Components
-@use '../materials/components/demo/demo';
+@use '../materials/components/banner/banner';
+@use '../materials/components/header/header';
+@use '../materials/components/link/link';
+@use '../materials/components/main/main';
+@use '../materials/components/sr-only/sr-only';
 
 // Layout
 @use '../materials/layout/container/container';
