@@ -4,7 +4,7 @@
   "description": "Splash screen to use as primary website pre-launch. Built with plain _HTML_ and _CSS_ (_scss_) and hosted using GitHub Pages.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./scss/styles.scss ./css/styles.css --style=compressed"
+    "sass": "sass ./docs/scss/styles.scss ./docs/css/styles.css --style=compressed"
   },
   "repository": {
     "type": "git",
