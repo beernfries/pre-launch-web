@@ -8,16 +8,19 @@
 // This map is used to declare variables to use for colors
 $colors: (
   primary: (
-    main: color-defs(blue-dark),
-    text: color-defs(white),
+    main: color-defs(blue),
+    text: color-defs(black),
   ),
   secondary: (
-    main: color-defs(teal),
+    main: color-defs(green),
+    text: color-defs(black),
+  ),
+  tertiary: (
+    main: color-defs(red),
     text: color-defs(black),
   ),
   bg: (
-    main: color-defs(white),
-    alt: color-defs(gray-light),
+    main: color-defs(offwhite),
   ),
   text: (
     main: color-defs(black),

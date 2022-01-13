@@ -1,0 +1,5 @@
+@use '../../../helpers' as *;
+
+.page {
+  padding: max(size(4), 4vw);
+}
