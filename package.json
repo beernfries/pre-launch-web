@@ -1,0 +1,22 @@
+{
+  "name": "pre-launch-web",
+  "version": "1.0.0",
+  "description": "Splash screen to use as primary website pre-launch. Built with plain _HTML_ and _CSS_ (_scss_) and hosted using GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./scss/styles.scss ./css/styles.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beernfries/pre-launch-web.git"
+  },
+  "author": "Alexander Erlandsson",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/beernfries/pre-launch-web/issues"
+  },
+  "homepage": "https://github.com/beernfries/pre-launch-web#readme",
+  "devDependencies": {
+    "sass": "^1.48.0"
+  }
+}
