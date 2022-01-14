@@ -1,0 +1,6 @@
+@use '../../helpers' as *;
+
+@include selection {
+  background-color: color(primary, main);
+  color: color(text, main);
+}
