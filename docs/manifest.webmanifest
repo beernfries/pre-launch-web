@@ -1,4 +1,9 @@
 {
+  "name": "BeerNFries",
+  "short_name": "BeerNFries",
+  "display": "standalone",
+  "theme_color": "#fffcf4",
+  "background_color": "#fffcf4",
   "icons": [
     { "src": "./assets/icon/icon-192.png", "type": "image/png", "sizes": "192x192" },
     { "src": "./assets/icon/icon-512.png", "type": "image/png", "sizes": "512x512" }
