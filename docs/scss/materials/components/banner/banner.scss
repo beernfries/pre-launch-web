@@ -8,7 +8,6 @@
   @include align-items(center);
   position: sticky;
   top: 0;
-  padding: size(1.5) 0;
   background-color: color(primary, main);
   color: color(primary, text);
   overflow: hidden;
@@ -29,7 +28,7 @@
     @include flex-shrink(0);
     @include transform(translateX(-100%));
     @include animation(no-transform 5s linear infinite);
-    font-size: max(1.25rem, 1.2vw);
-    padding-right: 2.5em;
+    font-size: max(1.25rem, 1.25vw);
+    padding: 0.5em 2.5em 0.5em 0;
   }
 }
