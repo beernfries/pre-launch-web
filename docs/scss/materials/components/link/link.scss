@@ -23,7 +23,7 @@
 
     &::before {
       @include transform(scalex(0));
-      @include transform-origin(0 50%);
+      @include transform-origin(100% 50%);
       content: '';
       position: absolute;
       top: 0;
@@ -35,9 +35,13 @@
       z-index: -1;
     }
 
-    &:hover {
-      &::before {
-        @include transform(none);
+    // Only hover if pointer device
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        &::before {
+          @include transform-origin(0 50%);
+          @include transform(none);
+        }
       }
     }
   }

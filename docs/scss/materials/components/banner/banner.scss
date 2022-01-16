@@ -18,9 +18,12 @@
     }
   }
 
-  &:hover {
-    #{$root}__item {
-      @include animation-play-state(paused);
+  // Only hover if pointer device
+  @media (any-hover: hover) and (any-pointer: fine) {
+    &:hover {
+      #{$root}__item {
+        @include animation-play-state(paused);
+      }
     }
   }
 
@@ -29,6 +32,13 @@
     @include transform(translateX(-100%));
     @include animation(no-transform 5s linear infinite);
     font-size: max(1.25rem, 1.25vw);
-    padding: 0.5em 2.5em 0.5em 0;
+    padding: 0.5em 1.25em 0.5em 1.25em;
+
+    // Only hover if pointer device
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
