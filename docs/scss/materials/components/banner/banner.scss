@@ -28,6 +28,10 @@
     }
   }
 
+  @include focus-parent {
+    outline: 2px dashed color(focus, main);
+  }
+
   &__item {
     @include flex-shrink(0);
     @include transform(translateX(-100%));
@@ -40,6 +44,10 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+
+    @include focus-parent {
+      @include animation-play-state(paused);
     }
   }
 }

@@ -14,3 +14,18 @@
     }
   }
 }
+
+@mixin focus-parent {
+  @supports selector(:focus-visible) {
+    :focus-visible & {
+      @content;
+    }
+  }
+
+  // Safari & IE11
+  @supports not selector(:focus-visible) {
+    :focus & {
+      @content;
+    }
+  }
+}
