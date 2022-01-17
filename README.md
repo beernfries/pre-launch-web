@@ -24,7 +24,7 @@ npm run sasss
 
 The website contains static files only and is hosted using _GitHub Pages_. The folder `/docs` on branch `main` contains the hosted website. __Make sure the site is working correctly before commiting to `main`__.
 
-> __Important:__ Remember to build the _SCSS_ before commiting to `main` because there is no build server.
+>⚠️ Remember to build the _SCSS_ before commiting to `main` because there is no build server.
 
 ## SCSS Framework
 
