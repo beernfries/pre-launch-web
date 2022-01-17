@@ -1,4 +1,4 @@
-# Beer n Fries pre-launch website
+# 🚀 Beer n Fries pre-launch website
 
 Splash screen to use as primary website pre-launch. Built with plain _HTML_ and _CSS_ (_SCSS_).
 
