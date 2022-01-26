@@ -1,0 +1,13 @@
+@use '../../../helpers' as *;
+
+.menu {
+  &__item {
+    padding: size(2);
+  }
+
+  &__column {
+    & + & {
+      margin-top: size(2);
+    }
+  }
+}

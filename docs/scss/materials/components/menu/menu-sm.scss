@@ -1,0 +1,33 @@
+@use '../../../helpers' as *;
+
+.menu {
+  $root: &;
+
+  &__item {
+    @include flex-display;
+    @include align-items(stretch);
+    @include justify-content(center);
+  }
+
+  &__column {
+    @include flex(1 1 auto);
+    @include flex-display;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    padding: size(4) size(2);
+
+    &--nowrap {
+      @include flex-shrink(0);
+    }
+
+    & + & {
+      border-left: size(1) solid color(text, main);
+
+      #{$root}__item--reverse & {
+        border-left: 0;
+        border-right: size(1) solid color(text, main);
+      }
+    }
+  }
+}
