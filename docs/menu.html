@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BeerNFries / Menu</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="An experimental recipe of dirty fries, non-alcoholic drinks, lifestyle sports and design.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fffcf4">
+
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" href="./assets/icon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./assets/icon/icon-180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+
+    <meta property="og:title" content="BeerNFries / Menu">
+    <meta property="og:site_name" content="BeerNFries">
+    <meta property="og:image" content="https://beernfries.com/assets/images/beernfries_og_image.png">
+    <meta property="og:url" content="https://beernfries.com">
+    <meta property="og:description" content="Check out our menu!">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="image_src" href="https://beernfries.com/assets/images/beernfries_og_image.png">
+
+    <link href="./css/styles.css" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ML0RF75J1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8ML0RF75J1');
+    </script>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu__item">
+        <div class="menu__column">
+          <h1 class="menu__heading menu__heading--1">Menu</h1>
+        </div>
+      </div>
+      <div class="menu__item">
+        <div class="menu__column">
+          <h2 class="menu__heading menu__heading--2">Heading</h2>
+        </div>
+      </div>
+      <div class="menu__item">
+        <div class="menu__column">
+          <div class="menu__sideinfo">
+            <div class="menu__sideinfo-outer">
+              <span class="menu__price">10 kr</span>
+            </div>
+            <div class="menu__sideinfo-inner">
+              <h2 class="menu__heading menu__heading--2">Heading</h2>
+            </div>
+            <div class="menu__sideinfo-outer">
+              <span class="menu__price">10 kr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu__item">
+        <div class="menu__column menu__column--nowrap">
+          <h3 class="menu__heading menu__heading--3">Title</h3>
+        </div>
+        <div class="menu__column">Description</div>
+      </div>
+      <div class="menu__item menu__item--reverse">
+        <div class="menu__column menu__column--nowrap">
+          <h3 class="menu__heading menu__heading--3">Title reverse</h3>
+        </div>
+        <div class="menu__column">Description reverse</div>
+      </div>
+    </div>
+  </body>
+</html>

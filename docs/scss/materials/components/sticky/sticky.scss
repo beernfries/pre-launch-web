@@ -1,0 +1,14 @@
+@use '../../../helpers' as *;
+
+.sticky {
+  @include flex-shrink(0);
+  position: sticky;
+
+  &--top {
+    top: 0;
+  }
+
+  &--bottom {
+    bottom: 0;
+  }
+}

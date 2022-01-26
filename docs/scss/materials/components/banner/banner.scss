@@ -6,8 +6,6 @@
 
   @include flex-display;
   @include align-items(center);
-  position: sticky;
-  top: 0;
   background-color: color(primary, main);
   color: color(primary, text);
   overflow: hidden;

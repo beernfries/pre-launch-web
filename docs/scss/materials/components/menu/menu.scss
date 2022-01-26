@@ -1,0 +1,80 @@
+@use '../../../helpers' as *;
+
+.menu {
+  $root: &;
+
+  border: size(1) solid color(text, main);
+  text-align: center;
+
+  &__item {
+    @include flex-display;
+    @include align-items(stretch);
+    @include justify-content(center);
+
+    & + & {
+      border-top: size(1) solid color(text, main);
+    }
+
+    &--reverse {
+      @include flex-direction(row-reverse);
+    }
+  }
+
+  &__column {
+    @include flex(1 1 auto);
+    @include flex-display;
+    @include align-items(center);
+    @include justify-content(center);
+    padding: size(4) size(2);
+
+    &--nowrap {
+      @include flex-shrink(0);
+    }
+
+    & + & {
+      border-left: size(1) solid color(text, main);
+
+      #{$root}__item--reverse & {
+        border-left: 0;
+        border-right: size(1) solid color(text, main);
+      }
+    }
+  }
+
+  &__heading {
+    margin: 0;
+
+    &--1 {
+      font-size: 4rem;
+    }
+
+    &--2 {
+      font-size: 3rem;
+    }
+
+    &--3 {
+      font-size: 2rem;
+    }
+  }
+
+  // Sideinfo
+  // Horizontally place information on either side
+  &__sideinfo {
+    @include flex(1 1 auto);
+    @include flex-display;
+    @include align-items(center);
+    gap: size(2);
+
+    &-outer {
+      @include flex-shrink(0);
+    }
+
+    &-inner {
+      @include flex(1 1 auto);
+    }
+  }
+
+  &__price {
+    letter-spacing: 0; // Remove letter spacing between price and unit
+  }
+}
