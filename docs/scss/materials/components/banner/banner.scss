@@ -9,7 +9,6 @@
   background-color: color(primary, main);
   color: color(primary, text);
   overflow: hidden;
-  z-index: 10;
 
   &--reverse {
     #{$root}__item {
