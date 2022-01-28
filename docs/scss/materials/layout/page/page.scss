@@ -1,5 +1,6 @@
 @use '../../../helpers' as *;
 
 .page {
+  @include flex(1 1 auto);
   padding: max(size(4), 4vw);
 }

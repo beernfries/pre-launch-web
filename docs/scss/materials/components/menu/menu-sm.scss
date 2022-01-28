@@ -1,0 +1,65 @@
+@use '../../../helpers' as *;
+
+.menu {
+  $root: &;
+  $border-width: max(size(1), 0.6vw);
+
+  &__item {
+    @include flex-display;
+    @include align-items(stretch);
+    @include justify-content(center);
+
+    & + & {
+      border-width: $border-width;
+    }
+  }
+
+  &__column {
+    @include flex(1 1 auto);
+    @include flex-display;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    padding: 1.75vw 1.5vw;
+    margin: -1px; // Hack to prevent pixel bugs for borders due to padding set in vw
+
+    &--nowrap {
+      @include flex-shrink(0);
+    }
+
+    & + & {
+      border-left: $border-width solid color(text, main);
+
+      #{$root}__item--reverse & {
+        border-left: 0;
+        border-right: $border-width solid color(text, main);
+      }
+    }
+
+    #{$root}__price {
+      @include flex-order(-1);
+    }
+  }
+
+  &__heading {
+    &--1 {
+      font-size: max(3.5rem, 5vw);
+    }
+
+    &--2 {
+      font-size: max(3rem, 4.5vw);
+    }
+
+    &--3 {
+      font-size: max(2.4rem, 4vw);
+    }
+  }
+
+  &__price {
+    font-size: max(1.5rem, 2.1vw);
+  }
+
+  &__description {
+    font-size: max(1.125rem, 1.3vw);
+  }
+}
