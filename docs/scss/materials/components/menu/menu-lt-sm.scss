@@ -1,13 +1,19 @@
 @use '../../../helpers' as *;
 
 .menu {
+  $root: &;
+
   &__item {
     padding: size(2);
   }
 
   &__column {
     & + & {
-      margin-top: size(2);
+      margin-top: size(1);
+    }
+
+    #{$root}__price {
+      margin-top: size(1);
     }
   }
 }
