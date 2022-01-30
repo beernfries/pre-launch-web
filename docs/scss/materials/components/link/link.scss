@@ -17,6 +17,10 @@
     color: color(tertiary, main);
   }
 
+  &--quaternary {
+    color: color(quaternary, main);
+  }
+
   &:not(#{$root}--no-styling) {
     position: relative;
     display: inline-block;
@@ -46,7 +50,7 @@
     }
   }
 
-  &:is(#{&}--primary, #{&}--secondary, #{&}--tertiary) {
+  &:is(#{&}--primary, #{&}--secondary, #{&}--tertiary, #{&}--quaternary) {
     &::before {
       background-color: color(text, main);
     }
