@@ -2,12 +2,11 @@
 
 .menu {
   border: size(1) solid color(text, main);
+  border-top: 0;
   text-align: center;
 
   &__item {
-    & + & {
-      border-top: size(1) solid color(text, main);
-    }
+    border-top: size(1) solid color(text, main);
 
     &--reverse {
       @include flex-direction(row-reverse);

@@ -4,6 +4,10 @@
   $root: &;
   $border-width: max(size(1), 0.6vw);
 
+  @include grid-display;
+  @include grid-auto-rows(1fr);
+
+  border-top: 0;
   border-width: $border-width;
 
   &__item {
@@ -11,9 +15,7 @@
     @include align-items(stretch);
     @include justify-content(center);
 
-    & + & {
-      border-width: $border-width;
-    }
+    border-width: $border-width
   }
 
   &__column {
