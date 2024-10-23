@@ -24,6 +24,7 @@
     <link rel="image_src" href="https://beernfries.com/assets/images/beernfries_og_image.png">
 
     <link href="./css/styles.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ML0RF75J1"></script>
     <script>
@@ -35,83 +36,12 @@
     </script>
   </head>
   <body>
-    <div class="sticky sticky--top">
-      <a href="/restaurant/menu" title="Go to the menu" class="link link--no-styling">
-        <span class="sr-only">Click here to see the menu</span>
-        <div class="banner banner--reverse" aria-hidden="true">
-          <div class="banner__item">Click here to see the menu</div>
-          <div class="banner__item">Click here to see the menu</div>
-          <div class="banner__item">Click here to see the menu</div>
-          <div class="banner__item">Click here to see the menu</div>
-          <div class="banner__item">Click here to see the menu</div>
-          <div class="banner__item">Click here to see the menu</div>
-        </div>
-      </a>
+    <div class="video-bg">
+      <video class="video-bg__video-js" preload="auto" data-setup="{}" autoplay muted loop>
+        <source src="blob:https://youtube.googleapis.com/b40b6896-e26d-4f82-825a-0f4ea8093a67" type="application/x-mpegURL" />
+      </video>
     </div>
-
-    <div class="page">
-      <header class="header">
-        <h1 class="header__logo">
-          <img src="./assets/images/beernfries_logo.svg" alt="BeerNFries" class="header__logo-img" />
-        </h1>
-      </header>
-      <main class="main">
-        <p>Hello! Hello! Welcome to your neighborhood playground, also known as <a href="https://www.instagram.com/beer.n.fries/" title="Visit BeerNFries on Instagram" target="_blank" rel="noopener noreferrer" class="link link--primary">@Beer.N.Fries</a>. Inspired by the spirit of subcultures, we are a place that fosters creative thinking to generate a multi-sensory recipe of music, visual arts and <a href="/restaurant/menu" title="View the menu" class="link link--quaternary">food</a>.</p>
-        <p>That recipe of creativity has now evolved into a physical environment, a <a href="https://goo.gl/maps/Ajtcm6FeGp2BtNxs7" title="View restaurant on Google Maps" target="_blank" rel="noopener noreferrer" class="link link--secondary">restaurant!</a> We collaborated with chef <a href="https://www.instagram.com/gustavtragardh/" title="Visit Gustav Trägårdh on Instagram" target="_blank" rel="noopener noreferrer" class="link link--tertiary">@gustavtragardh</a> to bring together food and experiences that touches the soul.</p>
-        <p>We are working to enhance the experience with curated garments and accessories. Soon we will open our digital shop where you can unlock our product drops.</p>
-        <p>See you at Södra Larmgatan 4.</p>
-        <p>
-          <a href="mailto:hey@beernfries.com" title="Send an e-mail to hey@beernfries.com" class="link link--primary">hey@beernfries.com</a>
-          <br />
-          <a href="https://www.tripadvisor.com/Restaurant_Review-g189894-d24136355-Reviews-BeerNFries-Gothenburg_Vastra_Gotaland_County_West_Coast.html" target="_blank" rel="noopener noreferrer" title="View BeerNFries on Tripadvisor" class="link link--secondary">View on Tripadvisor</a>
-        </p>
-      </main>
-    </div>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "BeerNFries",
-        "image": "https://www.beernfries.com/assets/images/beernfries_og_image.png",
-        "priceRange": "$$",
-        "url": "https://www.beernfries.com",
-        "menu": "https://www.beernfries.com/restaurant/menu",
-        "email": "hey@beernfries.com",
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "11:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Saturday"],
-            "opens": "11:30",
-            "closes": "16:00"
-          }
-        ],
-        "servesCuisine": [
-          "Fries"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Södra Larmgatan 4",
-          "addressLocality": "Gothenburg",
-          "postalCode": "41116",
-          "addressCountry": "SE"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 57.7026598,
-          "longitude": 11.963439
-        },
-        "sameAs": [
-          "https://www.facebook.com/BeerNFries/",
-          "https://www.instagram.com/beer.n.fries/"
-        ]
-      }
-    </script>
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.11.8/video.min.js"></script>
 </html>
